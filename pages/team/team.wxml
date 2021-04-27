@@ -1,0 +1,53 @@
+<!--pages/team/team.wxml-->
+<view class="main">
+  <image class="bjt" src="../../images/teamanagementsign.png" mode='widthFix'></image>
+    <text>队名：{{teamname}}</text>
+    <view class="ggdm" hidden='true'>
+      <input placeholder='请输入新的队名' maxlength="8" ></input>
+      <button class="qrggdm">确认</button>
+    </view>
+    <text hidden='true'>创建日期：YY年MM月DD日{{creattime}}</text>
+  <text>成员信息：</text>
+
+  <view class='teammember'>
+    <view class="table">
+      <view class="hang">
+          <view class="th th1">姓名</view>
+          <view class="th th2">班级</view>
+          <view class="th th3">联系方式</view>
+      </view>
+      <view class="hang" wx:for="{{sstulist}}">
+          <view class="td td1">{{item.name}}</view>
+          <view class="td td2">{{item.class}}</view>
+          <view class="td td3">{{item.connect}}</view>
+      </view>
+    </view>
+  </view>
+
+  <text>队长：{{leadername}}</text>
+  <text>当前选题：{{question}}</text>
+
+  <button class="button1" hover-class="anxia" hidden='{{true}}'>更改队名</button>
+  <button class="button1" hover-class="anxia" bindtap='changeClick' hidden='{{ifleader}}'>变更队长</button>
+  <view class="pk" hidden='{{leaderChange}}'>
+    <picker class="picker" bindchange="leadernameChange" value="{{index}}" range="{{name}}">
+      <view class="pickerword">
+        新队长：{{name[index]}}
+      </view>
+    </picker>
+    <view class="pkbtn">
+     <button class='pickerbtn' bindtap='yesBtnClick'>确认</button>
+     <button class="pickerbtn" bindtap='cancelBtnClick'>取消</button>
+    </view>
+  </view>
+  <button class="button1" hover-class="anxia" bindtap='inviteBtnClick' hidden='{{true}}'>邀请队员</button>
+  <view wx:if="{{!teamlen}}">
+    <button class="button2" bindtap='creatBtnClick'>创建队伍</button>
+  </view>
+  <view wx:else>
+    <button class="button2" bindtap='quitBtnClick'>退出队伍</button>
+  </view>
+  <!-- <view class="btn">
+    <text bindtap='returnBtnClick'>返回</text>
+  </view> -->
+</view>

@@ -1,0 +1,114 @@
+/* pages/team/team.wxss */
+view{
+  display:flex;
+  flex-direction: column;
+}
+
+.bjt{
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+
+.ggdm{
+  flex-direction: row;
+  border: dotted;
+  margin: 20rpx;
+  border-width: 10rpx;
+  border-color: lightblue;
+}
+
+
+text{
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+}
+
+input{
+  margin-left: 50rpx;
+  margin-top: 10rpx;
+  width:70%;
+  border-bottom: solid;
+  border-color: gainsboro;
+}
+
+.table{
+  display: felx;
+  justify-content:center;
+}
+
+.hang{
+  flex-direction: row;
+  justify-content: center;
+}
+
+.th,.td{
+  width: 30%;
+  border: solid;
+  border-width:1px;
+  border-color: gainsboro;
+  text-align: center;
+  color: gray;
+}
+
+.th3,.td3{
+  width: 35%;
+}
+
+.th{
+  background: papayawhip;
+  color: black;
+}
+
+.button1,.button2{
+  width: 90%;
+  margin-top: 15rpx;
+  border-radius: 20rpx;
+  border:none;
+}
+
+.button1::after,.button2::after{
+  border-radius: 20rpx;
+  border:none;
+}
+
+.button1{
+  background-color: aliceblue;
+}
+
+.anxia{
+  background-color: rgba(206, 206, 207, 0.795);
+}
+
+.picker{
+  margin: 50rpx;
+  border: solid;
+  border-color: gainsboro;
+  border-width: 5rpx;
+
+}
+
+.pk{
+  border: dotted;
+  margin: 20rpx;
+  border-width: 10rpx;
+  border-color: lightblue;
+}
+
+.pkbtn{
+  flex-direction: row;
+  margin-bottom: 10rpx;
+}
+
+.pickerbtn{
+  width: 30%;
+}
+
+.btn{
+  font-size: 10pt;
+  height: 55rpx;
+  background: #ffcc01;
+  color: black;
+  text-align: center;
+  border-radius: 50px;
+  margin: 30% 20% 30% 20%;
+}

@@ -1,0 +1,22 @@
+<!--pages/findpass/findpass.wxml-->
+<form bindsubmit="formSubmit">
+<view class="main">
+  <view class="title">姓名：</view>
+  <input class="input" name="name" placeholder="请输入您的姓名" type="number" maxlength="11"></input>
+  <view class="title">学号：</view>
+  <input class="input" name="stuno" placeholder="请输入您的学号"></input>
+</view>
+
+<view class="loading-screen">
+    <view class="loading">
+      <view class="a flour" ></view>
+      <view class="a flour" ></view>
+      <view class="a flour" ></view>
+      <view class="a flour" ></view>
+    </view>
+</view>
+<view class="bottomtext">
+    <button class='btn' form-type="submit">发送密码到邮箱</button>
+</view>
+
+</form>

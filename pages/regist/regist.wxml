@@ -1,0 +1,37 @@
+<!--pages/regist/regist.wxml-->
+<image class="zhucetu" src="../../images/register.png" mode="widthFix"></image>
+<form bindsubmit="formSubmit">
+<view class="main">
+  <view class="inputview">
+  <view class="title">学号：</view>
+  <input class="input" name="stuno" placeholder="请输入您的学号" type="number" maxlength="11"></input>
+  <view class="title">密码：</view>
+  <input class="input" name="password" placeholder="请设置您的密码" password></input>
+  <input class="input" name="repassword" placeholder="请重复您的密码" password></input>
+  <view class="title">姓名：</view>
+  <input class="input" name="name" placeholder="请输入您的姓名"></input>
+  <view class="title">性别：</view>
+    <radio-group class="radio-group" name="sex">
+    <label wx:for="{{items}}" class="radio">
+      <radio value="{{item.name}}" checked="{{item.checked}}" />
+      {{item.value}}
+    </label>
+    </radio-group>
+  </view>
+  <view class="title">班级：</view>
+  <input class="input" name="class" placeholder="请输入您的班级，如：18机自A1"></input>
+  <view class="title">手机：</view>
+  <input class="input" name="connect" placeholder="请输入您的手机" type="number" maxlength="11"></input>
+  <view class="title">邮箱：</view>
+  <input class="input" name="email" placeholder="请输入您的邮箱"></input>
+  <view class="title">任课教师：</view>
+  <picker class="picker" placeholder1="选择老师" bindchange="teachernamechange" value="{{index}}" range="{{teacherset}}">
+    <view class="pickerword">
+      当前选择：{{default}}
+    </view>
+  </picker>
+  <button class="button1" form-type="submit" hover-class="anxia">注册</button>
+  <button class="button2" hover-class="anxia" bindtap="noBtnClick" hidden='{{true}}'>取消</button>
+</view>
+</form>
+<text class="warning">{{warning}}</text>

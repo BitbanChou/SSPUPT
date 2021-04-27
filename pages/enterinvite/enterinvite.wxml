@@ -1,0 +1,13 @@
+<!--pages/enterinvite/enterinvite.wxml-->
+<view class="main">
+<view class="hang" wx:for="{{inviteinfo}}">
+  <view class="background">
+    <text class="cjdw">邀请信息</text>
+    <text class="word">队伍"{{item.teamname}}"邀请您加入他们，
+    邀请人为 {{item.name}}。</text>
+    <button class='qr' hover-class='anxia' bindtap='yesBtnClick' data-id='{{item.teamname}}'>同意加入</button>
+    <button class='jj' hover-class='anxia' bindtap='noBtnClick' data-id='{{item.teamname}}'>拒绝加入</button>
+  </view>
+</view>
+    <button class='fh' hover-class='anxia' bindtap='returnBtnClick' hidden='{{true}}'>返回</button>
+</view>
