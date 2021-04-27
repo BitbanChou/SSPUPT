@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/hello/hello",
+    "pages/hotpage/hotpage",
+    "pages/time/time",
+    "pages/team/team",
+    "pages/homepage/homepage",
+    "pages/regist/regist",
+    "pages/index/index",
+    "pages/createteam/createteam",
+    "pages/invite/invite",
+    "pages/info/info",
+    "pages/select/select",
+    "pages/message/message",
+    "pages/enterinvite/enterinvite",
+    "pages/visitor/visitor",
+    "pages/rg/rg",
+    "pages/problemselect/problemselect",
+    "pages/findpass/findpass"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "SSPUPT竞赛管理系统",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
