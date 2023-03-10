@@ -1,0 +1,78 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "id": -1,
+                    "name": "db guide",
+                    "pathName": "pages/databaseGuide/databaseGuide",
+                    "query": ""
+                },
+                {
+                    "id": 1,
+                    "name": "homepage",
+                    "pathName": "pages/homepage/homepage",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "publish",
+                    "pathName": "pages/publish/publish",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "select",
+                    "pathName": "pages/select/select",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "invite",
+                    "pathName": "pages/invite/invite",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "hotpage",
+                    "pathName": "pages/hotpage/hotpage",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "visitor",
+                    "pathName": "pages/visitor/visitor",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "publish",
+                    "pathName": "pages/publish/publish",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "problemselect",
+                    "pathName": "pages/problemselect/problemselect",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}
