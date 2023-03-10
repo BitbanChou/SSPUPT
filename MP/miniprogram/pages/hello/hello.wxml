@@ -1,0 +1,20 @@
+<!--pages/hello/hello.wxml-->
+<view class="main">
+  <image class="beijingtu" src="http://tiebapic.baidu.com/forum/w%3D580/sign=5f8341e92b061d957d4637304bf50a5d/d2f82034349b033bad37c40b50ce36d3d739bdf2.jpg" mode="widthFix"></image>
+ <view class="yhmmm">
+    <input class="input" name="userName" value="{{stuno}}" placeholder="请输入学号" type="number" maxlength="11" bindinput ="stunoInput"/>
+  </view>
+  <view class="yhmmm">
+    <input class="input" password value="{{password}}" placeholder="请输入密码" bindinput="passwordInput" />
+  </view>
+  <view class="denglu">
+    <button class="loginBtn" hover-class="anxia" bindtap="loginBtnClick">登录</button>
+  </view>
+  <view class="zhuce">
+     <button class="register" hover-class="anxia" bindtap="registerBtnClick"> 注册 </button>
+  </view>
+  <view class="bottomtext">
+    <button class="start-box" bindtap='forgetBtnClick'>忘记密码</button>
+    <button class="start-box" bindtap='visitBtnClick'>游客登录</button>
+  </view>
+</view>

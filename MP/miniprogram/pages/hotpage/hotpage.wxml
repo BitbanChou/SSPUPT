@@ -1,0 +1,43 @@
+<!--pages/hotpage/hotpage.wxml-->
+<view class="main">
+  <image class="bjt" src='../../images/hotage_problem.png' mode='widthFix'></image>
+  <view class='problem'>
+    <view class="table">
+      <view class="hang">
+      <navigator url='problemselect'>
+        <text decode class="timu">\n题目&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      </navigator>
+      <navigator url='teamc'>
+        <text decode class="timu">\n选题队数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      </navigator>
+      <navigator url='Tirec'>
+        <text class="timu">\n热度</text>
+      </navigator>
+      </view>
+      <view class="hang" wx:for="{{prolist}}">
+        <view class="td td1">{{item.name}}</view>
+        <view class="td td2">{{item.senu}}</view>
+        <view class="td td3">
+        <view class="lajiao">
+          <view  wx:for="{{item.roc}}">🚀</view>
+        </view>
+        <view class="lajiao">
+          <view  wx:for="{{item.nuc}}">☢️</view>
+        </view>
+        <view class="lajiao">
+          <view  wx:for="{{item.countt}}">⚡</view>
+        </view>
+        </view>
+      </view>
+      <!--⚡ <view class="hang" wx:for="{{usf}}">
+          <view class="td td1">{{item.name}}.{{item.currentproblem}}</view>
+          <view class="td td2">{{item.curpid}}/{{inall}}</view>
+          <view class="td td3">
+          <view class="lajiao">
+            <view  wx:for="{{item.hot}}">🌶</view>
+          </view>
+          </view>
+      </view> -->
+    </view>
+  </view>
+</view>

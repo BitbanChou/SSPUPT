@@ -1,0 +1,86 @@
+/* pages/invite/invite.wxss */
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+.bjt{
+  width: 100%;
+}
+
+input{
+  border-bottom: solid;
+  border-width: 4rpx;
+  border-color: gainsboro;
+  margin:50rpx;
+}
+
+.title{
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.cx{
+  width: 90%;
+  margin-top: 15rpx;
+  border-radius: 20rpx;
+  background-color: lightblue;
+}
+
+.cx::after{
+  border-radius: 20rpx;
+  border:none;
+}
+
+.stuinfo{
+  margin-top: 55rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 50rpx;
+  border: dotted;
+  border-width: 10rpx;
+  border-color: lightblue;
+}
+
+.stuinfotxt{
+  margin: 20rpx;
+  margin-left: 130rpx;
+}
+
+.stuinfobtn{
+  width: 50%;
+  margin-top: 15rpx;
+  border-radius: 20rpx;
+  margin-bottom: 25rpx;
+}
+
+.stuinfobtn::after{
+  border-radius: 20rpx;
+  border:none;
+}
+
+.fh{
+  width: 90%;
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+  background-color: gainsboro;
+}
+
+.fh::after{
+  border-radius: 20rpx;
+  border:none;
+}
+
+.anxia{
+  background-color: rgba(206, 206, 207, 0.795);
+}
+
+.btn{
+  font-size: 10pt;
+  height: 55rpx;
+  background: #ffcc01;
+  color: black;
+  text-align: center;
+  border-radius: 50px;
+  margin: 10% 20% 10% 20%;
+}

@@ -1,0 +1,65 @@
+<!--pages/message/message.wxml-->
+<view class="main">
+  <image class="bjt" src='../../images/billboard.png' mode="widthFix"></image>
+    <view class="background">
+      <text class="title">{{title}}</text>
+      <text class="text">{{infomation}}</text>
+    </view>
+  <!-- <image class="bjt" src='{{infomation}}' mode="widthFix"></image> -->
+<!-- <block>
+  <view class='user-input'>
+      <view class='img'>
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+        <view class='input-content'> -->
+          <!-- <input bindinput="bindKeyInput" placeholder="" /> -->
+          <!-- <text class='content-text' bindtap='onPublishClick'>有什么新鲜事想告诉大家！</text>
+        </view>
+  </view>
+</block> -->
+
+<!-- <view class="weui-panel__bd">
+  <view wx:for="{{topic}}" bindtap='onItemClick' data-topicId='{{item._id}}' data-openid='{{item._openid}}' class="weui-media-box weui-media-box_appmsg">
+    <view class='user-info'>
+    <image class='user-head' src='{{item.user.avatarUrl}}' mode='aspectFill'></image>
+      <view class='user-name-time'>
+        <view class='user-name'>{{item.user.nickName}}</view>
+      </view>
+    </view>
+    <view class="weui-media-box__bd">
+      <view class="weui-media-box__title" hover="true" hover-class="title_hover" data-id="{{topic.id}}">{{item.title}}
+        <image style="width: 15px; height: 15px; background-color: #eeeeee;" wx:if="{{topic.top}}"  ></image>
+        <image style="width: 15px; height: 15px; background-color: #eeeeee;" wx:if="{{topic.good}}" ></image>
+      </view>
+      <view class="weui-media-box__desc topic-summary">发布:{{item.date}} 点击: {{item.visit_count}}</view>
+    </view>
+  </view>
+</view> -->
+
+</view>
+<!-- <button class="btn" bindtap="returnBtnClick">返回</button> -->
+
+<view class="cu-card">
+ <view class="cu-item bg-img shadow-blur" style="background-image: linear-gradient({{item.bg_color}});"
+  bindtap="geturl" data-url="{{item.url}}" data-upname="{{item.up_name}}" data-name="{{item.title}}"
+  data-num="{{item.num}}" data-code="{{item.code}}" data-openid="{{item._openid}}" data-resourceid="{{item._id}}"
+  wx:for="{{list}}" wx:key="true">
+  <view class="cardTitle">
+   {{item.title}}
+  </view>
+  <view class="cu-list menu-avatar" style="border-radius: 25rpx;">
+   <view class="cu-item">
+    <view class="cu-avatar round lg" style="background-image:url({{item.up_img}});"></view>
+    <view class="content flex-sub">
+     <view class="text-grey">{{item.up_name}}</view>
+     <view class="text-gray text-sm flex justify-between">
+      {{item.time}}
+      <view class="text-gray text-sm">
+       下载次数：{{item.down_num}}
+      </view>
+     </view>
+    </view>
+   </view>
+  </view>
+ </view>
+</view>

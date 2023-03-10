@@ -1,0 +1,9 @@
+<image class="pic" src="../../images/register.png" mode="widthFix"></image>
+<view>
+  <view class="title">用户名：</view>
+  <input class="input" name="stuno" placeholder="请输入您的用户名" type="number" bindinput="getaccount" maxlength="11"></input>
+  <view class="title">密码：</view>
+  <input class="input" name="password" placeholder="请设置您的密码" bindinput="getpsw" password></input>
+  <input class="input" name="repassword" placeholder="请重复您的密码" bindinput="getrepsw" password></input>
+</view>
+<button class="btn" hover-class="anxia" bindtap="submit">注册</button>

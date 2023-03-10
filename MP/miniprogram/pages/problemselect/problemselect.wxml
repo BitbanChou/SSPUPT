@@ -1,0 +1,17 @@
+<p style='display:flex;justify-content:center;font-size: 28px;'>赛题一览</p>
+
+<scroll-view scroll-y="true">
+  <block class="block" wx:for="{{list}}">
+    <view class="list">
+      <view class="left-content">
+          <view id="title" data-id="{{item.id}}" bindtap="click">{{item.title}}</view>
+          <view id="contentE">{{item.contentE}}</view>
+          <view id="contentC">{{item.contentC}}</view>
+      </view>
+        <view class="right-img">
+          <image class="imgS" src="{{item.imgurl}}"></image>
+        </view>
+    </view>
+  </block>
+    <!--内容结束-->
+</scroll-view>
